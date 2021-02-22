@@ -1,12 +1,18 @@
-body {
+  @media screen (condition: breakpoint) {}
+  
+  body {
     font-size: 1rem;
     line-height: 1.5;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(20, 20, 20);
+    color: rgb(192, 201, 209);
   }
   
   img {
     height: auto;
     max-width: 100%;
+
   }
   
   h1 {
@@ -23,6 +29,7 @@ body {
     margin: 0 auto;
     padding-left: .5rem;
     padding-right: .5rem;
+    border-bottom: 2px solid #aa9df7;
   }
   
   .nav {
@@ -34,3 +41,27 @@ body {
   .nav-link {
     padding-right: 1rem;
   }
+
+  /* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  body {
+    font-size: 1.2rem;
+  }
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  section {
+    column-count: 2;
+  }
+  /* img {
+    float: right;
+    margin: 1rem;
+  } */
+}
